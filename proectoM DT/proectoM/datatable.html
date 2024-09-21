@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTable - Yuritz "Piñatas"</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- DataTable CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header>
+        <h1>Tabla de Piñatas Disponibles</h1>
+    </header>
+
+    <main>
+        <table id="piñataTable" class="display">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Piñata Dinosaurio</td>
+                    <td>Piñata en forma de dinosaurio verde.</td>
+                    <td>$15</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Piñata Número 3</td>
+                    <td>Piñata en forma de número 3, temática de colores.</td>
+                    <td>$12</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Piñata Número 1</td>
+                    <td>Piñata en forma de número 1, decorada con flores.</td>
+                    <td>$10</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <a href="index.html">
+            <button class="back-btn">Regresar</button>
+        </a>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#piñataTable').DataTable();
+        });
+    </script>
+</body>
+</html>
