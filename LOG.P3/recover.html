@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <h1>Yuritz "Piñatas"</h1>
+    <div class="container">
+      <h2>Recuperar Contraseña</h2>
+      <form id="recoverForm">
+        <div class="input-group">
+          <label for="recoverUsername">Usuario</label>
+          <input type="text" id="recoverUsername" required>
+        </div>
+        <button type="button" id="generateTokenButton">Generar Token</button>
+        <div id="tokenMessage" class="success-message"></div>
+
+        <div class="input-group" id="tokenSection" style="display: none;">
+          <label for="tokenInput">Token</label>
+          <input type="text" id="tokenInput" required>
+        </div>
+
+        <div class="input-group" id="newPasswordSection" style="display: none;">
+          <label for="newPassword">Nueva Contraseña</label>
+          <input type="password" id="newPassword" required minlength="8">
+        </div>
+
+        <button type="submit" id="updatePasswordButton" style="display: none;">Actualizar Contraseña</button>
+      </form>
+      <p><a href="Login.html" style="color: #6d2177; text-decoration: none;">Volver al Login</a></p>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

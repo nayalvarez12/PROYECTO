@@ -1,0 +1,191 @@
+/* Reset y estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f8fc;
+    color: #333;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d7b6f2;
+    padding: 10px;
+}
+
+.logo img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #4d1a7f;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 5px;
+    border: 2px solid #4d1a7f;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4d1a7f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #ae58d3;
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.cart-btn {
+    background-color: #d7b6f2;
+    border: 1px solid #4d1a7f;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Estilos para el panel lateral */
+.side-panel {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid #4d1a7f;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.side-panel.active {
+    right: 0;
+}
+
+.side-panel-left {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 2px solid #4d1a7f;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.side-panel-left.active {
+    left: 0;
+}
+
+.close-panel {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4d1a7f;
+    float: right;
+}
+
+/* Estilos del carrito */
+#carritoItems {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#carritoItems li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-btn {
+    background-color: #f51f1f;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #d71b1b;
+}
+
+
+
+
+/* Estilos para el cambio de tema */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+button.dark-mode {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* Estilos del switch */
+.switch {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Aseguramos que los estilos en oscuro tengan precedencia */
+.dark-mode .side-panel, .dark-mode .side-panel-left, .dark-mode #carritoItems li {
+    background-color: #333;
+    color: #ddd;
+}
+
+.dark-mode .remove-btn {
+    background-color: #bb3333;
+}

@@ -1,0 +1,80 @@
+ /* Estilos básicos para el formulario */
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7e8ff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #9a4ecc; /* Color morado */
+  font-size: 24px; /* Tamaño del encabezado */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+h2 {
+  color: #9a4ecc;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #6d2177;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #9a4ecc;
+  background-color: #f3e8ff;
+  color: #6d2177;
+}
+
+.input-group input:focus {
+  border-color: #9a4ecc;
+  outline: none;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.85em;
+}
+
+.success-message {
+  color: #4da84d;
+  font-size: 0.85em;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9a4ecc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #d1b6e5;
+  cursor: not-allowed;
+}
